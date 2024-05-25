@@ -1,0 +1,129 @@
+.customMenu {
+    background: 500ms all;
+    width: 100px;
+    height: 75px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: background-color 500ms ease, transform 500ms ease;
+}
+
+.customMenu:hover {
+    background-color: #7d8996;
+    width: 100px;
+    height: 75px;
+    transition: 500ms all;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/*Anasayfa - Bilgilerim - Arkaplan - Başlangıç*/
+.customColorProcess {
+    background-color: #313A41;
+}
+
+/*Anasayfa - Bilgilerim - Arkaplan - Bitiş*/
+
+/*Resim Zoom Animasyon Bölgesi - Başlangıç*/
+
+.imageProcess {
+    cursor: pointer;
+    transition: background-color 500ms ease, transform 500ms ease;
+}
+
+.imageProcess:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 300ms all;
+}
+
+/*Resim Zoom Animasyon Bölgesi - Bitiş*/
+
+/*Lazy loading İşlemleri - Başlangıç*/
+.lazySection {
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.9s;
+}
+
+.lazySection.visible {
+    opacity: 1;
+}
+
+/*Lazy loading İşlemleri - Bitiş*/
+
+/*ScrollBar İşlemleri - Başlangıç*/
+/* Dikey kaydırma çubuğu */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Çubuğun genişliği */
+}
+
+/* Kaydırma kolu */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Kaydırma kolu rengi */
+    border-radius: 6px;
+    /* Köşe yarıçapı */
+}
+
+/* Kaydırma kolu üzerine gelindiğinde */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Kaydırma kolu rengi (hover durumu) */
+}
+
+/* Dikey kaydırma çubuğu arka planı */
+::-webkit-scrollbar-track {
+    background-color: #212429;
+    /* Çubuğun arka plan rengi */
+}
+
+/* Kaydırma kolu ile arka plan arasındaki boşluk */
+::-webkit-scrollbar-track-piece {
+    background-color: #212429;
+    /* Çubuğun arka plan rengi */
+}
+
+/* Kaydırma çubuğunun kenarlık rengi */
+::-webkit-scrollbar-track-piece:start {
+    background-color: #212429;
+    /* Çubuğun arka plan rengi */
+    border-top-left-radius: 6px;
+    /* Köşe yarıçapı */
+    border-top-right-radius: 6px;
+    /* Köşe yarıçapı */
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background-color: #212429;
+    /* Çubuğun arka plan rengi */
+    border-bottom-left-radius: 6px;
+    /* Köşe yarıçapı */
+    border-bottom-right-radius: 6px;
+    /* Köşe yarıçapı */
+}
+
+/* Kaydırma çubuğunun kenarlık rengi (hover durumu) */
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+    /* Çubuğun arka plan rengi */
+}
+
+/*ScrollBar İşlemleri - Bitiş*/
+
+/*Harici Link ve Hover İşlemleri - Başlangıç*/
+.link-custom {
+    color: white;
+    text-decoration: none;
+    transition: color 500ms ease;
+    /* Renk değişimi için transition eklendi */
+}
+
+.link-custom:hover {
+    color: rgb(116, 112, 112);
+}
+
+/*Harici Link ve Hover İşlemleri - Bitiş*/

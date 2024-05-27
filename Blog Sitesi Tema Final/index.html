@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+
+<!-- 
+        ÖNEMLİ AÇIKLAMA
+    
+    Bu tasarım Eren Toprak Ünal tarafından yapılmıştır, lütfen emeğe saygı gösteriniz,
+birebir kopyalamayınız, emek hırsızlığı yapmayınız...
+
+linkedin:https://www.linkedin.com/in/eren-toprak-unal/
+github:https://github.com/Erenunal123
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>erentoprakunal.com</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- BOOTSTRAP CSS CDN - BAŞLANGIÇ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- BOOTSTRAP CSS CDN - BİTİŞ -->
+
+    <!-- FA FA ICON CSS CDN - BAŞLANGIÇ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- FA FA ICON CSS CDN - BİTİŞ -->
+
+</head>
+
+
+<!-- Navbar Menü - Başlangıç -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow">
+    <div class="container-fluid">
+        <a onclick="window.location.href='./index.html'" style="cursor: pointer;" class="navbar-brand">
+            <img src="./img/logo.fw.png" alt="websitelogo" width="180" height="75">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <div class="d-flex ms-auto">
+
+                <div class="customMenu" onclick="window.location.href='#anasayfa'">
+                    <p class="text-light mt-4 ms-2">Anasayfa</p>
+                </div>
+
+
+                <div class="customMenu" onclick="window.location.href='#hedeflerim'">
+                    <p class="text-light mt-4 ms-2">Hedeflerim</p>
+                </div>
+
+                <div class="customMenu" onclick="window.location.href='#hakkimda'">
+                    <p class="text-light mt-4 ms-2">Hakkımda</p>
+                </div>
+
+                <div class="customMenu" onclick="window.location.href='#bilgilerim'">
+                    <p class="text-light mt-4 ms-2">Bilgilerim</p>
+                </div>
+
+                <div class="customMenu" onclick="window.location.href='#iletisim'">
+                    <p class="text-light mt-4 ms-2">İletişim</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar Menü - Bitiş -->
+
+<!-- Responsive Alanda Açılacak Olan Menü Kısmı - Başlangıç -->
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header bg-dark text-light">
+        <div class="d-flex ms-auto">
+            <a onclick="window.location.href='./index.html'" style="cursor: pointer;" class="navbar-brand">
+                <img src="./img/logo.fw.png" alt="websitelogo" width="180" height="75" />
+            </a>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body bg-dark text-light">
+        <div>
+            <button type="button" class="btn btn-dark w-100 text-start" onclick="window.location.href='#anasayfa'">
+                Anasayfa
+            </button>
+
+            <button type="button" class="btn btn-dark w-100 text-start" onclick="window.location.href='#hedeflerim'">
+                Hedeflerim
+            </button>
+
+            <button type="button" class="btn btn-dark w-100 text-start" onclick="window.location.href='#bilgilerim'">
+                Hakkımda
+            </button>
+
+            <button type="button" class="btn btn-dark w-100 text-start" onclick="window.location.href='#iletisim'">
+                Bilgilerim
+            </button>
+
+            <button type="button" class="btn btn-dark w-100 text-start" onclick="window.location.href='#anasayfa'">
+                İletişim
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Responsive Alanda Açılacak Olan Menü Kısmı - Bitiş -->
+
+
+
+<body class="bg-dark text-light">
+
+    <!-- Slayt Kısmı - Başlangıç -->
+    <div class="lazySection" id="lazySection1">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!--Slayt Butonları - Başlangıç -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1500"
+                    data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <!--Slayt Butonları - Bitiş -->
+
+            <!--Slayt Resim - Başlangıç -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slider_img_01.jpg" class="d-block w-100 img-fluid" alt="sliderimage01"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider_img_02.jpg" class="d-block w-100 img-fluid" alt="sliderimage02"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider_img_03.jpg" class="d-block w-100 img-fluid" alt="sliderimage03"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider_img_04.jpg" class="d-block w-100 img-fluid" alt="sliderimage04"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider_img_05.jpg" class="d-block w-100 img-fluid" alt="sliderimage05"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider_img_06.jpg" class="d-block w-100 img-fluid" alt="sliderimage06"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider_img_07.jpg" class="d-block w-100 img-fluid" alt="sliderimage07"
+                        style="cursor: pointer;" onclick="window.location.href='#'">
+                </div>
+            </div>
+            <!--Slayt Resim - Bitiş -->
+
+            <!--Yanlardaki Slayt Butonları - Başlangıç -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" hidden></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" hidden></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <!--Yanlardaki Slayt Butonları - Bitiş -->
+        </div>
+    </div>
+    <!-- Slayt Kısmı - Bitiş -->
+
+
+    <!-- Anasayfa Bölümü - Başlangıç -->
+    <div class="container-fluid customColorProcess p-3" style="font-size: x-large;">
+        <section id="anasayfa">
+            <div class="row ms-1 me-1">
+                <div class="col-12">
+                    <div class="lazySection" id="lazyHeader1">
+                        <h1 class="text-center text-light mt-5" style="font-family:cursive;">
+                            Merhaba!</h1>
+                    </div>
+                    <div class="lazySection" id="lazyIndexContent1">
+                        <p class="text-center ms-5 me-5">Ben Eren Toprak Ünal, Web geliştirme ve
+                            programlama konularında uzman olma yolunda emin adımlarla
+                            ilerleyen junior bir yazılım geliştiriciyim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Anasayfa Bölümü - Bitiş -->
+
+
+    <!-- Hedeflerim Bölümü - Başlangıç -->
+    <div class="container-fluid bg-secondary p-3" style="font-size: x-large;">
+        <section id="hedeflerim">
+            <div class="row ms-1 me-1">
+                <div class="col-12">
+                    <div class="lazySection" id="lazyHeader2">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            HEDEFLERİM
+                        </h1>
+                    </div>
+                    <div class="lazySection" id="lazyAboutContent1">
+                        <div class="row text-center">
+
+                            <!--Hedeflerim 1. Kart - Başlangıç -->
+                            <div class="col-xl-3 col-md-4 col-sm-12 text-light">
+                                <div class='card bg-transparent text-light border border-0'>
+                                    <img src='./img/target_img_01.fw.png' alt='image01'
+                                        class="imageProcess customFilterTransaction" />
+                                    <div class='card-body'>
+                                        <div class="lazySection" id="lazyAboutColHeader1">
+                                            <h3 class='card-title'>Teknoloji Bilgisi Geliştirme</h3>
+                                            <hr />
+                                        </div>
+                                        <div class="lazySection" id="lazyAboutColContent1">
+                                            <div class='card-text'>
+                                                Mevcut teknoloji yetkinliğimi derinleştirerek, sadece temel bilgi
+                                                düzeyinde
+                                                kalmak yerine, çalıştığım teknolojilerde uzmanlaşmak istiyorum. Bu,
+                                                dilinizi
+                                                (Java, Python, JavaScript vb.) ve ilgili çerçeveleri veya kütüphaneleri
+                                                (Spring,
+                                                React, Django vb.) daha iyi anlamayı ve uygulamayı içerir. Bunun için
+                                                belirli
+                                                bir teknolojiye odaklanarak sürekli olarak derinlemesine araştırma
+                                                yapmayı
+                                                ve
+                                                yeni teknolojileri deneyerek öğrenmeyi hedefliyorum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Hedeflerim 1. Kart - Bitiş -->
+
+                            <!--Hedeflerim 2. Kart - Başlangıç -->
+                            <div class="col-xl-3 col-md-4 col-sm-12 text-light">
+                                <div class='card bg-transparent text-light border border-0'>
+                                    <img src='./img/target_img_02.fw.png' alt='image01'
+                                        class="imageProcess customFilterTransaction" />
+                                    <div class='card-body'>
+                                        <div class="lazySection" id="lazyAboutColHeader2">
+                                            <h3 class='card-title'>Proje Yönetimi ve Liderlik Yetkinlikleri</h3>
+                                            <hr />
+                                        </div>
+                                        <div class="lazySection" id="lazyAboutColContent2">
+                                            <div class='card-text'>
+                                                Sadece kod yazmakla kalmayıp aynı zamanda projeleri daha etkin bir
+                                                şekilde
+                                                yönetebilmek ve liderlik rollerini üstlenebilmek istiyorum. Bu, proje
+                                                yönetimi
+                                                tekniklerini (Agile, Scrum vb.) daha iyi anlamayı, zaman yönetimi
+                                                becerilerimi
+                                                geliştirmeyi ve ekibimi daha iyi koordine etmeyi içerir. Aynı zamanda,
+                                                ekibimdeki diğer üyelerin güçlü yönlerini tanıyarak onları yönlendirme
+                                                ve
+                                                teşvik
+                                                etme konusunda daha yetkin hale gelmeyi amaçlıyorum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Hedeflerim 2. Kart - Bitiş -->
+
+                            <!--Hedeflerim 3. Kart - Başlangıç -->
+                            <div class="col-xl-3 col-md-4 col-sm-12 text-light">
+                                <div class='card bg-transparent text-light border border-0'>
+                                    <img src='./img/target_img_03.fw.png' alt='image01'
+                                        class="imageProcess customFilterTransaction" />
+                                    <div class='card-body'>
+                                        <div class="lazySection" id="lazyAboutColHeader3">
+                                            <h3 class='card-title'>Mentorluk ve Bilgi Paylaşımı</h3>
+                                            <hr />
+                                        </div>
+                                        <div class="lazySection" id="lazyAboutColContent3">
+                                            <div class='card-text'>
+                                                Sahip olduğum deneyimleri genç veya daha az deneyimli meslektaşlarımla
+                                                paylaşarak onlara rehberlik etmeyi ve desteklemeyi hedefliyorum.
+                                                Mentorluk
+                                                yaparak, onların kariyer gelişimlerine katkıda bulunmayı ve teknik
+                                                becerilerini
+                                                geliştirmelerine yardımcı olmayı amaçlıyorum. Ayrıca, geri bildirim
+                                                alarak
+                                                kendi
+                                                becerilerimi ve anlayışımı da geliştirmeyi planlıyorum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Hedeflerim 3. Kart - Bitiş -->
+
+                            <!--Hedeflerim 4. Kart - Başlangıç -->
+                            <div class="col-xl-3 col-md-4 col-sm-12 text-light">
+                                <div class='card bg-transparent text-light border border-0'>
+                                    <img src='./img/target_img_04.fw.png' alt='image01'
+                                        class="imageProcess customFilterTransaction" />
+                                    <div class='card-body'>
+                                        <div class="lazySection" id="lazyAboutColHeader4">
+                                            <h3 class='card-title'>Ürün Geliştirmede Katkıda Bulunma</h3>
+                                            <hr />
+                                        </div>
+                                        <div class="lazySection" id="lazyAboutColContent4">
+                                            <div class='card-text'>
+                                                Sadece kod yazmakla kalmayıp aynı zamanda projenin ve ürünün genel
+                                                geliştirme
+                                                sürecine de katkıda bulunmak istiyorum. Bu, proje yaşam döngüsünü daha
+                                                iyi
+                                                anlamayı, yazılım mimarisi tasarlama süreçlerine katılma yeteneklerimi
+                                                geliştirmeyi ve test otomasyonu, CI/CD (Continuous
+                                                Integration/Continuous
+                                                Deployment) gibi süreçleri etkin bir şekilde kullanmayı içerir. Bu
+                                                sayede,
+                                                projelerin daha hızlı ve verimli bir şekilde ilerlemesine katkıda
+                                                bulunarak
+                                                daha
+                                                stratejik bir rol üstlenmeyi amaçlıyorum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Hedeflerim 4. Kart - Bitiş -->
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <!-- Hedeflerim Bölümü - Bitiş -->
+
+
+    <!-- Hakkımda Bölümü - Başlangıç -->
+    <div class="container-fluid customColorProcess p-3" style="font-size: x-large;">
+        <section id="hakkimda">
+            <div class="row ms-1 me-1">
+                <div class="col-12">
+
+                    <div class="lazySection" id="lazyHeader3">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            HAKKIMDA
+                        </h1>
+                    </div>
+                    <div class="lazySection" id="lazyAboutContent1">
+                        <p class="text-center ms-5 me-5">
+                            Tam yığın geliştirme konusunda tutkulu bir bilgisayar
+                            programcısıyım.
+                            Hem
+                            frontend hem de backend teknolojilerinde geniş bir bilgi birikimine sahibim ve bu alanda
+                            sürekli
+                            olarak kendimi geliştirmeye odaklanıyorum. HTML, CSS ve JavaScript gibi temel web
+                            teknolojilerini ustalıkla kullanarak etkileyici kullanıcı arayüzleri oluşturabiliyor,
+                            aynı
+                            zamanda Node.js, Express.js ve PHP, Laravel gibi backend programlama dili ve
+                            kütüphaneleriyle
+                            güçlü ve ölçeklenebilir web uygulamaları geliştirebiliyorum.
+                        </p>
+                    </div>
+
+                    <div class="lazySection" id="lazyHeaderInnerTitle1">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            Küçüklükten Gelen Merak
+                        </h1>
+                        <div class="text-center mt-5 mb-5">
+                            <img src="./img/about_text_img_01.png" alt="computer_child_image"
+                                class="customFilterTransaction" />
+                        </div>
+                    </div>
+
+                    <div class="lazySection" id="lazyAboutContent2">
+                        <p class="text-center ms-5 me-5">
+                            Küçük yaşlardan itibaren bilgisayar ve bilgisayar gibi teknolojik
+                            cihazlar her zaman ilgimi çekmiştir, bu teknolojik cihazlara
+                            olan ilgim, ebeveynlerimin de dikkatini çekmiş olsa gerek ki
+                            beni bilgisayar dünyasının eğitim yoluna yönlendirdiler ve
+                            böylelikle başarılı ilkokul ve ortaokul öğrenimlerinden sonra
+                            ortaöğretimde (lisede) Tuzla İ.M.K.B Anadolu Meslek ve Meslek Lisesi'nin
+                            Bilişim Teknolojileri bölümünü kazandım ve burada Web dünyasının temelleri olan HTML, CSS
+                            gibi teknolojilerle tanıştım.
+                            Bu teknolojilerin haricinde C# ve ASP gibi teknolojilerin temellerini de görerek
+                            sadece web dünyasında değil geniş bir yelpazede programlamanın mantığını ve algoritmanın
+                            ne olduğunu anlamaya dair tecrübem oluştu.
+                        </p>
+                    </div>
+
+                    <div class="lazySection" id="lazyHeaderInnerTitle2">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            Üniversite Sıralarındaki Tecrübelerim
+                        </h1>
+                        <div class="text-center mt-5 mb-5">
+                            <img src="./img/about_text_img_02.png" alt="university_image"
+                                class="customFilterTransaction" />
+                        </div>
+                    </div>
+
+                    <div class="lazySection" id="lazyAboutContent3">
+                        <p class="text-center ms-5 me-5">
+                            2017 yılında liseden başarılı şekilde mezun oldum, üniversite
+                            sınavına girerek Marmara Üniversitesi / Teknik Bilimler M.Y.O
+                            Bilgisayar Programcılığı bölümünü kazandım, burada yine ortaöğretimden
+                            temelini aldığım web dünyasının taşları olarak nitelendirdiğim HTML, CSS
+                            gibi teknolojiler haricinde C, C#, Python, SQL gibi programlama dilleri ve
+                            bunların yanı sıra grafik tasarım olarak da Photoshop programlarını
+                            gördüm. Bunun haricinde temel seviyede bilgisayar donanımı dersleri ve
+                            Ağ (Network) dersleri de aldım.
+                        </p>
+                    </div>
+
+
+                    <div class="lazySection" id="lazyHeaderInnerTitle3">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            Üniversite Sonrası Yol Haritası
+                        </h1>
+                        <div class="text-center mt-5 mb-5">
+                            <img src="./img/about_text_img_03.png" alt="way_image" class="customFilterTransaction" />
+                        </div>
+                    </div>
+                    <div class="lazySection" id="lazyAboutContent4">
+                        <p class="text-center ms-5 me-5">
+                            Üniversiteyi başarılı bir şekilde bitirdikten sonra artık bu geniş
+                            bilgisayar dünyasında bir yol seçmem gerekiyordu, önümde her
+                            bilgisayar dünyasına giren insanlarınki gibi 3 yol
+                            vardı, 1.cisi Donanım 2.cisi Network 3.cüsü ise yazılım,
+                            ben 3.cü yol olan yazılım yolunu seçtim çünkü bilgisayar başında uzun saatler
+                            oturup kodlarla boğuşup mücadele etmek ya da işin espirisi bir tarafa
+                            bir kodun mantığını anlayıp analiz etmek ve o kodu herhangi bir yerden
+                            bakmaksızın kafamda algoritmasını oturtabilmek bana oldukça
+                            keyif veriyordu, özellikle bir Web uygulamasının çalışma mantığı,
+                            arkasında yatan neden - sonuç ilişkileri gibi durumlar benim için
+                            ilgi çekiciydi.
+                        </p>
+                    </div>
+
+                    <div class="lazySection" id="lazyHeaderInnerTitle4">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            Web Dünyasına Giriş ve Profesyonel Gelişim
+                        </h1>
+                        <div class="text-center mt-5 mb-5">
+                            <img src="./img/about_text_img_04.png" alt="way_image" class="customFilterTransaction" />
+                        </div>
+                    </div>
+                    <div class="lazySection" id="lazyAboutContent5">
+                        <p class="text-center ms-5 me-5">
+                            Web yazılımını yol edindikten sonra burada neler yapmam gerektiğini ve hangi programlama
+                            dillerine
+                            aşina olmam gerektiğini, hangi teknolojilerin web dünyasında popüler olduğu ve neden gerekli
+                            olduğu gibi soruları bir yola koyarak buna göre bir yol haritası belirlemeye karar verdim,
+                            öncelikle bir Web uygulamasının kullanıcılar tarafından görünen kısmı önyüz (frontend)
+                            kısmının çalışma mantığını ve bunun için hangi teknolojileri seçmem gerektiğini belirledim,
+                            eğitim yıllarımdan aşina olduğum CSS bilgimin üstüne biraz daha koyarak bununla da
+                            yetinmeyip
+                            çok popüler olan Bootstrap kütüphanesini de öğrenerek çeşitli web uygulama arayüzleri
+                            geliştirmeye başladım. Tabii ki tasarım kısmı işin eğlenceli kısmıydı sadece bir Web
+                            uygulamasının
+                            tasarımını geliştirip bırakmak bana göre değildi, arkasında bir şeyler çalıştırmam
+                            gerekiyordu ve
+                            yapılan tasarımla etkileşime geçmeliydi, bunun için de arkauç olarak tabir edilen (backend)
+                            kısmında
+                            öğrenmem gereken teknolojileri belirledim, PHP, Laravel programlama ve kütüphane dilleri
+                            benim için adeta
+                            biçilmiş kaftandı, bu teknolojilerin yanı sıra önyüz kısmında Javascript / React
+                            teknolojileriyle
+                            yaptığım gelitirmelerden ötürü arkauçta bu dillerden çok kopmamak adına Node.js ve
+                            Express.js programlama
+                            dili ve kütüphanesiyle de birkaç uygulama geliştirdim.
+                        </p>
+                    </div>
+
+                    <div class="lazySection" id="lazyHeaderInnerTitle5">
+                        <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                            Sonuç Olarak...
+                        </h1>
+                        <div class="text-center mt-5 mb-5">
+                            <img src="./img/about_text_img_05.png" alt="check_image" class="customFilterTransaction" />
+                        </div>
+                    </div>
+                    <div class="lazySection" id="lazyAboutContent6">
+                        <p class="text-center ms-5 me-5">
+                            2022'den beridir Profesyonel olarak Web Yazılım Uzmanı olma
+                            yolunda emin adımlarla ilerliyorum, içinde bulunduğumuz
+                            bu global yüzyılda çıkan yeni teknolojileri merakla takip ediyor,
+                            uygulamaya, anlamaya çalışıyorum.
+                            Hedefim ise programlama dünyasında sürdürülebilir ve kullanıcı dostu
+                            uygulamalar geliştirerek hem kendi açımdan hem de kullanıcılar açısından
+                            oldukça değerli bir katkı sağlamak. Her yeni proje, öğrenme fırsatıyla birlikte kendimi daha
+                            da geliştirme şansı veriyor. Bu yolda karşılaştığım her zorluk, sadece bilgi ve deneyimimi
+                            artırmakla kalmıyor, aynı zamanda kararlılığımı da pekiştiriyor. Geleceğe dair heyecanımı ve
+                            motivasyonumu koruyarak, her gün biraz daha ileri gitmeye devam ediyorum. Web yazılım uzmanı
+                            olma yolundaki bu serüvenimde, yeniliklere açık olmak ve sürekli gelişmek benim için hayati
+                            önem taşıyor. Bu tutkuyla dolu yolculuğumda, sadece kendi başarılarımı değil, aynı zamanda
+                            çevreme de ilham olmayı ve teknolojinin gücünü daha geniş bir kitleye ulaştırmayı
+                            amaçlıyorum.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Hakkımda Bölümü - Bitiş -->
+
+
+    <!-- Bilgilerim Bölümü - Başlangıç -->
+    <div class="container-fluid bg-secondary p-3" style="font-size: x-large;">
+        <section id="bilgilerim">
+
+            <div class="lazySection" id="lazyHeader4">
+                <h1 class="text-center text-light mt-5 mb-5" style="font-family:cursive;">
+                    BİLGİLERİM
+                </h1>
+            </div>
+
+            <div class="lazySection" id="lazyInfotext">
+                <p class="text-light mb-5 text-center">Tecrübe edinmiş olduğum programlama dilleri ve teknolojileri
+                    sizlerle paylaşıyorum...</p>
+            </div>
+
+            <div class="lazySection" id="lazyInfoRow1">
+                <div class="row text-center">
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_01.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12  mb-3">
+                        <img src="./img/about_area_img_02.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12  mb-3">
+                        <img src="./img/about_area_img_03.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="lazySection" id="lazyInfoRow2">
+                <div class="row text-center">
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_04.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_05.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_06.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="lazySection" id="lazyInfoRow3">
+                <div class="row text-center">
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_07.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_08.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_09.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="lazySection" id="lazyInfoRow4">
+                <div class="row text-center">
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_10.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_11.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <img src="./img/about_area_img_12.jpg" alt="html5" class="imageProcess" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Bilgilerim Bölümü - Bitiş -->
+
+
+    <!-- İletişim Bölümü - Başlangıç -->
+    <div class="container-fluid customColorProcess p-3">
+        <section id="iletisim">
+            <div class="row ms-1 me-1 justify-content-center">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+
+                    <div class="lazySection" id="lazyHeader5">
+                        <h1 class="text-center text-light" style="font-family:cursive;">
+                            İLETİŞİM
+                        </h1>
+                    </div>
+
+                    <div class="lazySection" id="lazyContact">
+                        <form>
+                            <div class="mb-3">
+                                <label for="user_area" class="form-label">Ad Soyad</label>
+                                <input type="text" class="form-control" id="user_area" required
+                                    placeholder="Adınızı giriniz...">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mail_area" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="mail_area" aria-describedby="emailHelp"
+                                    required placeholder="Mail adresinizi giriniz...">
+                            </div>
+                            <div class="mb-3">
+                                <label for="text_area" class="form-label">Mesajınızı Giriniz</label>
+                                <textarea class="form-control" id="text_area" rows="3" required
+                                    placeholder="Mesajınızı giriniz..."></textarea>
+                            </div>
+                            <button class="btn btn-outline-light" type="submit" id="liveToastBtn">Göster</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- İletişim Bölümü - Bitiş -->
+    <button id="scrollToTopBtn" title="Yukarı Çık">▲</button>
+
+
+    <!-- Footer Alanı - Başlangıç -->
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-xl-12 col-md-12 col-sm-4 text-center mt-3 mb-3 p-1">© 2024 - Siteyi Tasarlayan: <a
+                    onclick="window.location.href='https://tr.linkedin.com/in/eren-toprak-unal'" class="link-custom"
+                    style="text-decoration: none; cursor: pointer;">Eren Toprak Ünal</a> -
+                Tüm Hakları Saklıdır.
+            </div>
+        </div>
+    </div>
+    <!-- Footer Alanı - Bitiş -->
+
+
+
+    <!-- BOOTSTRAP CSS CDN - BAŞLANGIÇ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CSS CDN - BİTİŞ -->
+
+    <script src="./jspage.js"></script>
+
+</body>
+
+</html>
